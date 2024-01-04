@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
@@ -12,8 +11,8 @@ html {
 }
 
 body {
-    margin: 0;
-    font-family: 'Lato', sans-serif;
+    width: 100%;
+    height: 100vh;
     overflow-x: hidden;
 }
 
@@ -143,7 +142,7 @@ header .conteiner {
     font-size: 2.3em;
 }
 
-.main_area {
+main {
     background-color: rgb(229, 229, 229);
 }
 
@@ -210,7 +209,79 @@ footer p {
     align-items: flex-end;
 }
 
-@media (min-width: 720px) {
+.servicio-fila {
+    text-align: center;
+    grid-gap: 20px 5px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.btn {
+    width: 250px;
+}
+
+.card-blog {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card-blog:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translate(-3%);
+}
+
+.img-voluntariado {
+    height: 350px;
+}
+
+.contenido {
+    padding: 15px;
+    text-align: center;
+}
+
+.contenido p {
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.contenido h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.boton-card a {
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    border: 1px solid #2B556C;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.boton-card a:hover {
+    background: #2B556C;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .img-voluntariado {
+        height: 300px;
+    }
+
+    .btn {
+        width: 200px;
+    }
 
     .conteiner_header {
         display: flex;
@@ -288,5 +359,20 @@ footer p {
 
     .footer_area {
         grid-area: footer;
+    }
+}
+
+@media(max-width: 576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    .img-voluntariado {
+        height: 250px;
+    }
+
+    .btn {
+        width: 150px;
     }
 }
