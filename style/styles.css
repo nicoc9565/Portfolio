@@ -25,7 +25,7 @@ a {
 }
 
 header {
-    background-color: #282828;
+    background-color: #292929;
 }
 
 .logo {
@@ -255,6 +255,22 @@ main {
 }
 
 /* ----------- SECCION DE CARDS BLOG ----------- */
+/* ----------- GALERIA ----------- */
+#galeria .col-lg-4 {
+    margin: 0 !;
+    padding: 20px;
+}
+
+#galeria img {
+    width: 100%;
+    height: 100%;
+}
+
+#galeria img:hover {
+    border: 5px solid #f7f7f7;
+}
+
+/* ----------- GALERIA ----------- */
 /* ----------- SECCION DE FOOTER ----------- */
 footer {
     background-color: #E5E5E5;
@@ -450,34 +466,6 @@ footer {
         background-position: center center;
         height: 25em;
         border-radius: 8px;
-    }
-
-    .conteiner_header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5px;
-    }
-
-    .nav_conteiner {
-        display: flex;
-        flex-direction: row;
-        padding: 25px;
-    }
-
-    .conteiner_name {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        position: absolute;
-        left: 20%;
-    }
-
-    .conteiner-main {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
 }
