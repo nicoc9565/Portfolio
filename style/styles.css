@@ -169,17 +169,11 @@ main {
 }
 
 .quienSoy-text h2 {
-    font-size: 1.5em;
-    line-height: .9;
+    font-size: 1.8em;
 }
 
 .quienSoy-text p {
     text-align: justify;
-}
-
-.quienSoy-hi {
-    font-weight: bold;
-    font-size: 2em;
 }
 
 /* ----------- SECCION MAIN ----------- */
