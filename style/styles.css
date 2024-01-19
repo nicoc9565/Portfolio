@@ -61,7 +61,6 @@ header {
 main {
     background-color: #E5E5E5;
     margin-bottom: 100px;
-
 }
 
 .hero {
@@ -79,6 +78,17 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.hero h2 {
+    background: #F6E120;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 120px;
+    font-size: 2em;
+    padding: 15px 55px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 8px 3px rgba(0, 0, 0, 0.2);
 }
 
 .hero h3 {
@@ -139,17 +149,6 @@ main {
 
 /* ----------- EFECTO OLAS ----------- */
 
-.hero h2 {
-    background: #F6E120;
-    color: #000000;
-    font-weight: bold;
-    margin-top: 120px;
-    font-size: 2em;
-    padding: 15px 55px;
-    border-radius: 8px;
-    box-shadow: 10px 10px 8px 3px rgba(0, 0, 0, 0.2);
-}
-
 .quienSoy {
     padding: 200px 0;
 }
@@ -202,22 +201,6 @@ main {
     transform: translateY(-3%)
 }
 
-.boton-card {
-    display: flex;
-    justify-content: center;
-}
-
-.btn {
-    width: 50%;
-    background-color: #397fa4;
-    color: #fff !important;
-    display: block;
-    padding: 10px;
-    text-align: center;
-    margin-top: 10px;
-    border-radius: 8px;
-}
-
 .card-body {
     flex-grow: 1;
     display: flex;
@@ -236,6 +219,11 @@ main {
     margin-bottom: 15px;
 }
 
+.boton-card {
+    display: flex;
+    justify-content: center;
+}
+
 .boton-card a {
     padding: 10px;
     margin-top: 10px;
@@ -247,7 +235,17 @@ main {
 
 .boton-card a:hover {
     background: #2B556C;
-    color: #fff;
+}
+
+.btn {
+    width: 50%;
+    background-color: #397fa4;
+    color: #fff !important;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 8px;
 }
 
 /* ----------- SECCION DE CARDS BLOG ----------- */
@@ -285,6 +283,7 @@ main {
 
 .bienvenido-title h2 {
     font-weight: bold;
+    font-size: clamp(1.4em, 5vw, 2.4em);
 }
 
 .bienvenido-text {
@@ -315,30 +314,23 @@ main {
     margin: 30px 0;
 }
 
-.contenedor-album__text h3 {
+.contenedor-album__text h2 {
     font-weight: bold;
     font-size: clamp(1.3em, 5vw, 2.2em);
 }
 
-.contenedor-album__text h4 {
+.contenedor-album__text h3 {
     font-weight: bold;
     font-size: clamp(1em, 5vw, 1.4em);
 }
 
-.contenedor-album__text h5 {
+.contenedor-album__text h4 {
     font-size: clamp(1em, 5vw, 1.3em);
 }
 
 .contenedor-album__text p {
     font-size: clamp(1em, 5vw, 1.2em);
 
-}
-
-.icon-gustos {
-    display: flex;
-    flex-direction: column;
-    padding-top: 150%;
-    font-size: 3.5rem;
 }
 
 .skills-icon {
@@ -357,7 +349,7 @@ main {
 
 /* ----------- SECCION INFO ----------- */
 /* ----------- GALERIA ----------- */
-.title-page {
+.voluntariado {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -366,13 +358,13 @@ main {
     padding-top: 70px;
 }
 
-.title-page h1 {
+.voluntariado h1 {
     font-size: clamp(2rem, 1.0774rem + 1.7836vw, 3.625rem);
     font-weight: 800;
     margin: 0;
 }
 
-.title-page hr {
+.voluntariado hr {
     height: 7px;
     width: 35%;
     margin-top: 1px;
@@ -380,7 +372,7 @@ main {
     box-shadow: 10px 10px 8px;
 }
 
-.title-page h3 {
+.voluntariado h2 {
     font-size: clamp(1.5rem, 1.0774rem + 1.7836vw, 1.625rem);
     padding: 0 20%;
 }
@@ -407,7 +399,7 @@ main {
 
 .gallery-img:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%)
+    transform: scale(1.2);
 }
 
 .contenedor-img:nth-child(2) {
@@ -477,7 +469,7 @@ footer {
 }
 
 .social-icon li a:hover {
-    transform: translateY(-10px)
+    transform: translateY(-10px);
 }
 
 .menu-footer li a {
@@ -563,6 +555,10 @@ footer {
 /* ----------- SECCION DE FOOTER ----------- */
 @media (max-width: 1200px) {
 
+    .quienSoy-text h2 {
+        text-align: center
+    }
+
     .contenedor {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -615,13 +611,6 @@ footer {
 
     .contenedor-img:nth-child(14) {
         grid-column-start: span 3;
-    }
-}
-
-@media (max-width: 1200px) {
-
-    .quienSoy-text h2 {
-        text-align: center
     }
 }
 
