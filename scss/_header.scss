@@ -1,16 +1,17 @@
 header {
     #menu-nav{
+        box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
         div{
             a {
                 text-decoration: none;
                 font-weight: $fontWeight;
-                color: white;
+                color: $paletaColoresParrafos;
                 & :hover {
                     color: rgb(215, 215, 215);
                 }
                 .logo {
                     font-weight: 800;
-                    color: white;
+                    color: $paletaColoresParrafos;
                     font-size: 1.6em;
                     cursor: pointer;
                     transition: 0.35s ease;
@@ -20,7 +21,7 @@ header {
                 }
             }
             .navbar-toggler {
-                background-color: #E5E5E5 ;
+                background-color: $paletaColoresParrafos ;
             }
         }
     }
