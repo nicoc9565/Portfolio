@@ -1,49 +1,75 @@
 @media (max-width: 1200px) {
-    .quienSoy-text h2 {
-        text-align: center
+
+    .quienSoy {
+        justify-content: center;
+        margin: 0 30px;
+        .quienSoy-img {
+            padding-bottom: 40px;
+        }
+        .quienSoy-text {
+            h2 {
+                text-align: center !important;
+            }
+        }
     }
+
+    .caja-info{
+        padding: 30px;
+    }
+
     .contenedor {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;
         .contenedor-img{
+            &:nth-child(0) {
+                grid-column-start: span 1;
+            }
             &:nth-child(1) {
-                grid-column-start: span 2;
+                grid-column-start: span 1;
             }
             &:nth-child(2) {
-                grid-column-start: span 2;
-                grid-row-start: span 2;
+                grid-column-start: span 1;
             }
             &:nth-child(3) {
-                grid-column-start: span 2;
+                grid-column-start: span 1;
             }
             &:nth-child(4) {
-                grid-column-start: span 2;
+                grid-column-start: span 1;
             }
             &:nth-child(5) {
-                grid-column-start: span 2;
+                grid-column-start: span 1;
             }
             &:nth-child(6) {
-                grid-column-start: span 2;
+                grid-column-start: span 1;
             }
             &:nth-child(7) {
-                grid-column-start: span 2;
+                grid-column-start: span 1;
             }
             &:nth-child(9) {
-                grid-column-start: span 2;
+                grid-column-start: span 1;
             }
             &:nth-child(10) {
-                grid-column-start: span 2;
+                grid-column-start: span 1;
             }
             &:nth-child(12) {
-                grid-column-start: span 2;
+                grid-column-start: span 1;
+            }
+            &:nth-child(13) {
+                grid-column-start: span 1;
             }
             &:nth-child(14) {
-                grid-column-start: span 3;
+                grid-column-start: span 2;
             }
         }
     }
 }
 
 @media (max-width: 992px) {
+
+    .contenedor {
+        max-width: 700px;
+    }
+
     .hero {
         padding-top: 250px;
         padding-left: 100px;
@@ -86,6 +112,11 @@
                 padding: 15px 30px;
             }
         }
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(1fr);
+        max-width: 600px;
     }
 
     .contenedor {

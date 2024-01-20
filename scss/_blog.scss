@@ -20,19 +20,22 @@
     }
 }
 
-
+.caja-blog {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
 
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 200px auto;
     div{
         div{
             .card-header{
                 display: flex;
                 flex-direction: column;
                 overflow: hidden;
-                background: #fff;
+                padding: 0 !important;
+                @include fondo;
                 border-radius: 14px !important;
                 box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
                 cursor: default;
@@ -66,18 +69,18 @@
                             border-radius: 4px;
                             transition: all 400ms ease;
                             &:hover {
-                                background: #2B556C;
+                                @include fondo;
                             }
                         }
                         .btn {
                             width: 50%;
-                            background-color: #397fa4;
-                            color: #fff !important;
+                            background-color: $paletaColoresTitulo;
                             display: block;
+                            font-weight: $fontWeight;
                             padding: 10px;
                             text-align: center;
                             margin-top: 10px;
-                            border-radius: 8px;
+                            border-radius: 20px;
                         }
                     }
                 }

@@ -54,12 +54,13 @@
 
 .container {
     .quienSoy {
-        padding: 200px 0;
+        padding: 70px 0;
+        margin: 150px 0;
+        @include fondo;
         .quienSoy-img {
             width: 75vw;
             max-width: 480px;
             min-width: 320px;
-            padding-right: 40px;
             img {
                 width: 100%;
                 object-fit: cover;
@@ -70,12 +71,14 @@
         .quienSoy-text{
             h2 {
                 text-align: left;
+                padding: 0 40px;
                 font-size: $fontSizeH2;
                 color: $paletaColoresTitulo;
                 font-weight: $fontWeight;
             }
             p {
                 text-align: justify;
+                padding: 0 40px;
                 font-size: $fontSizeP;
                 color: $paletaColoresParrafos;
             }

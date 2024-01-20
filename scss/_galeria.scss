@@ -3,17 +3,16 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    padding: 100px;
 }
 
 .contenedor {
-    max-width: 1600px;
-    margin: 0 200px;
+    max-width: 1400px;
     display: grid;
+    margin: 0 50px;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 550px;
-    gap: 20px;
-    padding: 100px 0;
+    grid-template-rows: 450px;
+    gap: 25px;
+    padding: 200px 0;
     .contenedor-img{
         .gallery-img {
             width: 100%;
