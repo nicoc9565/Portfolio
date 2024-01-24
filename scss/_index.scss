@@ -11,7 +11,7 @@
     background-position: center center;
     box-shadow: $shadowBox;
     div {
-        h3 {
+        p {
             margin-bottom: -25px;
             font-size: $fontSizeH3;
             text-align: left;
@@ -27,7 +27,7 @@
             margin-top: 10px;   
                      
             -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
+            background-clip: text;
         }
     }
     .dev-h2 {
