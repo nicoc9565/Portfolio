@@ -23,54 +23,59 @@
     border-radius: 20px;
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5),0px 0px 30px 0px rgba(0,0,0,0.5);
     margin: 200px 8%;
+    background-image: linear-gradient(212deg, rgba(26,89,102,0.8) 36%, rgba(45,50,80,0.8) 78%, rgba(2,0,36,0.8) 100%), url(../img/fondo-contact.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     .mailCel {
-        background-image: linear-gradient(212deg, rgba(26,89,102,0.8) 36%, rgba(45,50,80,0.8) 78%, rgba(2,0,36,0.8) 100%), url(../img/fondo-contact.jpg);
-        border-radius: 10px 0 0 10px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         ul {
-            padding: 50px;
             li {
                 color: #000000;
+                i {
+                    font-size: 2rem;
+                    padding: 20px 0;
+                }
                 p {
-                    color: #000000;
-                    font-size: $fontSizeP;
+                    font-size: $fontSizeH4;
                     font-weight: $fontWeight;
                 }
             }
         }
     }
     .form-group {
-        padding: 100px 50px 25px 50px;
+        padding: 80px 50px 25px 50px;
         .input-group {
             font-size: 1.25rem;
             position: relative;
+            box-shadow: $shadowBox;
+            margin-top: 30px;
             .input {
                 all: unset;
                 color: $paletaColoresTitulo;
                 padding: 1rem;
                 width: 100%;
                 border: 2px solid $paletaColoresTitulo;
-                border-radius: 10px;
+                border-radius: 10px !important;
                 transition: 150ms
                 cubic-bezier(0.4, 0, 0.2, 1);
                 &:focus {
                     border: 2px solid;
                 }
                 &:is(:focus, :valid) ~ .label {
-                    transform: translateY(-120%)
-                    scale(0.7);
-                    background-color: #2f3767;
+                    transform: translateY(-145%)
+                    scale(0.9);
+                    background-color: transparent;
                     padding-inline: 0.3rem;
                     color: $paletaColoresTitulo;
                 }
             }
             .input-mjs{
+                @extend .input;
                 height: 100px;
                 text-align: start;
             }
@@ -95,7 +100,7 @@
                     background-color: #0E0E1A;
                     color: white;
                     transition: 0.6s;
-                    box-shadow: 0px 0px 60px hsl(232, 85%, 69% / 0.6);
+                    box-shadow: 0px 0px 60px hsl(232, 85%, 100%);
                     
                     -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
                     &:active {

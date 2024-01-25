@@ -78,6 +78,7 @@
         margin: 0 50px;
         .contenedor-album__text {
             margin: 30px 0;
+            line-height: 2;
             h2 {
                 font-weight: $fontWeight;
                 font-size: $fontSizeH2;
@@ -86,7 +87,7 @@
             }
             h3 {
                 font-weight: $fontWeight;
-                font-size: $fontSizeH3;
+                font-size: $fontSizeH4;
                 color: $paletaColoresParrafos;
             }
             h4 {
@@ -102,7 +103,6 @@
                 justify-content: space-evenly;
                 gap: 20px;
                 flex-wrap: wrap;
-                padding-top: 50px;
                 li {
                     font-size: 5.5em;
                     color: $paletaColoresTitulo;
