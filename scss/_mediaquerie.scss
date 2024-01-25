@@ -103,4 +103,13 @@
     .menu-footer{
         flex-wrap: nowrap;
     }
+
+    .info-me{
+        ul {
+            .info-me-style {
+                font-size: 15px;
+                padding: 3px;    
+            }
+        }
+    }
 }
