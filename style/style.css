@@ -701,6 +701,9 @@ footer .copy-footer {
   .contenedor .gallery-img:hover {
     transform: translate(3%);
   }
+  .container .quienSoy .quienSoy-img {
+    padding: 0 35px 40px;
+  }
   .menu-footer {
     flex-wrap: nowrap;
   }
