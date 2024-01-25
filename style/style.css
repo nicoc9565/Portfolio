@@ -404,10 +404,11 @@ header #menu-nav div .navbar-toggler {
   line-height: 2;
 }
 .caja-info .contenedor-album .contenedor-album__text h2 {
-  font-weight: bold;
+  font-weight: 900;
   font-size: clamp(1.4em, 5vw, 2.2em);
-  color: #ffffff;
-  text-decoration-line: underline;
+  color: #000000;
+  text-align: center;
+  text-shadow: 0px 10px 7px rgba(204, 125, 81, 0.8);
 }
 .caja-info .contenedor-album .contenedor-album__text h3 {
   font-weight: bold;
