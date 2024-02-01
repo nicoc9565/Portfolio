@@ -1,0 +1,17 @@
+$fontSizeH1: clamp(2rem, 1.0774rem + 1.7836vw, 3.625rem);
+$fontSizeH2: clamp(1.4em, 5vw, 2.2em);
+$fontSizeH3: clamp(1.3em, 5vw, 1.5em);
+$fontSizeH4: clamp(1em, 5vw, 1.3em);
+$fontSizeP: clamp(1rem, 5vw, 1rem);
+$fontWeight: bold;
+
+
+$paletaColoresParrafos:#ffffff;
+$paletaColoresFondoDeFondo: #676f9d;
+$paletaColoresOtrosFondos: #424769;
+$paletaColoresFondo: #2d3250;
+$paletaColoresFondoPagina: #111e2d;
+$paletaColoresTitulo: #cc7d51;
+
+$shadowBox: 10px 10px 7px rgba(0, 0, 0, 0.2);
+$gradiente: linear-gradient(141deg, rgba(26,89,102,1) 15%, rgba(45,50,80,1) 72%, rgba(2,0,36,1) 100%);

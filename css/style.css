@@ -99,17 +99,17 @@ header #menu-nav div .navbar-toggler {
   background-position: center center;
   box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
 }
-.hero p {
+.hero div p {
   margin-bottom: -25px;
-  font-size: clamp(1em, 5vw, 1.3em);
+  font-size: clamp(1.3em, 5vw, 1.5em);
   text-align: left;
   color: #2d3250;
 }
-.hero h1 {
+.hero div h1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: clamp(3.2rem, 7vw, 7rem);
+  font-size: clamp(4rem, 7vw, 6rem);
   font-weight: 900;
-  background: linear-gradient(141deg, rgb(26, 89, 102) 1%, rgb(45, 50, 80) 30%, rgb(2, 0, 36) 100%);
+  background: linear-gradient(141deg, rgb(26, 89, 102) 15%, rgb(45, 50, 80) 72%, rgb(2, 0, 36) 100%);
   margin-top: 10px;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -122,34 +122,15 @@ header #menu-nav div .navbar-toggler {
   color: #ffffff;
   font-weight: bold;
   font-size: clamp(1rem, 5vw, 1rem);
-  padding: 15px 8%;
+  padding: 15px 50px;
   border-radius: 8px;
   box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
-}
-.hero .social_icons {
-  display: flex;
-  margin-top: 1em;
-  gap: 30px;
-}
-.hero .social_icons .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
-.hero .social_icons .icon i {
-  font-size: 30px;
-  color: linear-gradient(141deg, rgb(26, 89, 102) 15%, rgb(45, 50, 80) 72%, rgb(2, 0, 36) 100%);
 }
 
 .container .quienSoy {
   padding: 70px 0;
   margin-top: 15%;
-  margin-bottom: 35%;
+  margin-bottom: 25%;
   background: rgb(2, 0, 36);
   background: linear-gradient(141deg, rgb(26, 89, 102) 15%, rgb(45, 50, 80) 72%, rgb(2, 0, 36) 100%);
   box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
@@ -180,7 +161,7 @@ header #menu-nav div .navbar-toggler {
 }
 .container .quienSoy .quienSoy-text p {
   text-align: justify;
-  padding: 0 5px;
+  padding: 0 40px;
   font-size: clamp(1rem, 5vw, 1rem);
   color: #ffffff;
 }
@@ -243,7 +224,7 @@ header #menu-nav div .navbar-toggler {
   text-align: justify;
   font-size: clamp(1rem, 5vw, 1rem);
   color: #ffffff;
-  padding: 20px 15px;
+  padding: 20px 50px;
 }
 .container .bienvenido-content p span {
   font-weight: bold;
@@ -260,9 +241,9 @@ header #menu-nav div .navbar-toggler {
   background: linear-gradient(141deg, rgb(26, 89, 102) 15%, rgb(45, 50, 80) 72%, rgb(2, 0, 36) 100%);
   box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  padding: 15px;
+  padding: 30px;
   text-align: justify;
-  margin: 0 20px;
+  margin: 0 50px;
 }
 .caja-info .contenedor-album .contenedor-album__text {
   margin: 30px 0;
@@ -330,12 +311,12 @@ header #menu-nav div .navbar-toggler {
 }
 .voluntariado h2 {
   font-size: clamp(1.3em, 5vw, 1.5em);
-  padding: 0 10% 25px;
+  padding: 0 20% 25px;
   color: #ffffff;
 }
 
 .caja-blog {
-  margin: 100px 10px 200px 10px;
+  margin: 100px 50px 200px 50px;
 }
 .caja-blog .container {
   width: 100%;
@@ -360,7 +341,7 @@ header #menu-nav div .navbar-toggler {
 }
 .caja-blog .container div div .card-header:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .caja-blog .container div div .card-header .card-body {
   flex-grow: 1;
@@ -416,7 +397,7 @@ header #menu-nav div .navbar-toggler {
 }
 .flex-galeria h2, .carrusel-gallery h2 h2 {
   margin-top: 100px;
-  font-size: clamp(1.4em, 5vw, 2.2em);
+  font-size: clamp(2rem, 1.0774rem + 1.7836vw, 3.625rem);
   font-weight: 900;
   background: #CC7D51;
   background: linear-gradient(to bottom, #CC7D51 30%, #111E2D 100%);
@@ -462,12 +443,9 @@ header #menu-nav div .navbar-toggler {
   grid-column-start: span 4;
 }
 
-.carrusel-gallery {
-  margin: 0 30px;
-}
 .carrusel-gallery h2 {
   margin-top: 100px;
-  font-size: clamp(1.4em, 5vw, 2.2em);
+  font-size: clamp(2rem, 1.0774rem + 1.7836vw, 3.625rem);
   font-weight: 900;
   background: #CC7D51;
   background: linear-gradient(to bottom, #CC7D51 30%, #111E2D 100%);
@@ -494,11 +472,11 @@ header #menu-nav div .navbar-toggler {
   background-position: center;
   background-size: cover;
   background-repeat: none;
+  transition: flex 0.8s ease;
   border: 1px solid;
   border-radius: 16px;
   margin: 0 5px 0 5px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
-  transition: flex 1s ease-in-out;
 }
 .carrusel-gallery .carrusel .gallery-wrap .item:hover {
   flex: 5;
@@ -519,15 +497,9 @@ header #menu-nav div .navbar-toggler {
   background-image: url("../img/galeria/bridge-posadas.webp");
 }
 
-.fondo-info .text-contact h2 {
-  font-size: clamp(1.4em, 5vw, 2.2em);
-  font-weight: bold;
-  color: #000000;
-  padding-top: 30px;
-}
 .fondo-info .text-contact p {
   font-size: 1.2rem;
-  padding: 1.2rem 1rem;
+  padding: 1.2rem 3rem;
   color: #fff;
   text-align: justify;
 }
@@ -539,8 +511,6 @@ header #menu-nav div .navbar-toggler {
   display: flex;
   justify-content: center;
   text-decoration: underline;
-  color: #000000;
-  font-weight: bold;
 }
 
 .caja-contact {
@@ -774,7 +744,7 @@ footer .copy-footer {
     flex-wrap: nowrap;
   }
   .info-me ul .info-me-style {
-    font-size: 13px;
+    font-size: 15px;
     padding: 3px;
   }
   .carrusel .gallery-wrap {
@@ -782,16 +752,6 @@ footer .copy-footer {
   }
   .carrusel .gallery-wrap .item {
     margin: 5px 0 5px 0;
-  }
-  .hero .social_icons {
-    gap: 20px;
-  }
-  .hero .social_icons .icon {
-    width: 40px;
-    height: 40px;
-  }
-  .hero .social_icons .icon i {
-    font-size: 20px;
   }
 }
 

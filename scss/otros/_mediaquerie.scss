@@ -1,0 +1,118 @@
+@media (max-width: 1200px) {
+    
+    .quienSoy {
+        justify-content: center;
+        margin: 0 30px;
+        .quienSoy-img {
+            padding-bottom: 40px;
+        }
+        .quienSoy-text {
+            h2 {
+                text-align: center !important;
+            }
+        }
+    }
+
+    .caja-info{
+        padding: 30px;
+    }
+
+    .flex-galeria{
+        .contenedor {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 700px;
+            .contenedor-img{
+                &:nth-child(1) {
+                    grid-column-start: span 2;
+                }
+                &:nth-child(2) {
+                    grid-column-start: span 1;
+                }
+                &:nth-child(8) {
+                    grid-column-start: span 1;
+                }
+                &:nth-child(9) {
+                    grid-column-start: span 2;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .caja-contact {
+        .mailCel {
+            padding-top: 30px;
+        }
+    }
+
+    .caja-blog {
+        .container {
+            max-width: 650px;
+        }
+    }
+
+    .contenedor {
+        max-width: 700px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .contenedor {
+        grid-template-columns: repeat(1fr);
+        max-width: 600px;
+    }
+
+    .contenedor {
+        margin: 0 50px;
+        .gallery-img:hover {
+            transform: translate(3%)
+        }
+    }
+
+    .container {
+        .quienSoy {
+            .quienSoy-img {
+                padding: 0 35px 40px;
+            }
+        }
+    }
+
+    .menu-footer{
+        flex-wrap: nowrap;
+    }
+
+    .info-me{
+        ul {
+            .info-me-style {
+                font-size: 13px;
+                padding: 3px;    
+            }
+        }
+    }
+
+    .carrusel {
+        .gallery-wrap {
+            flex-direction: column;
+            .item {
+                margin: 5px 0 5px 0;
+            }
+        }
+    }
+
+    .hero {
+        .social_icons {
+            gap: 20px;
+            .icon {
+                width: 40px;
+                height: 40px;
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

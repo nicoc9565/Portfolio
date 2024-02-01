@@ -1,0 +1,92 @@
+.voluntariado{
+    @include title-page;
+    h1 {
+        font-size: $fontSizeH1;
+        font-weight: 800;
+        color: $paletaColoresTitulo;
+        margin: 0;
+    }
+    hr {
+        height: 7px;
+        width: 35%;
+        margin-top: 1px;
+        margin-bottom: 20px;
+        background-color: $paletaColoresTitulo;
+        box-shadow: $shadowBox;
+    }
+    h2 {
+        font-size: $fontSizeH3;
+        padding: 0 10% 25px;
+        color: $paletaColoresParrafos;
+    }
+}
+
+.caja-blog {
+    margin: 100px 10px 200px 10px;
+    .container {
+        width: 100%;
+        max-width: 1000px;
+        div{
+            margin: 15px 0;
+            div{
+                .card-header{
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+                    padding: 0 !important;
+                    @include fondo;
+                    border-radius: 14px !important;
+                    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+                    cursor: default;
+                    transition: all 400ms ease;
+                    &:hover {
+                        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+                        transform: scale(1.1)
+                    }
+                    .card-body {
+                        flex-grow: 1;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 20px 15px;
+                        text-align: justify;
+                        .card-title {
+                            font-weight: $fontWeight;
+                            margin-bottom: 15px;
+                            color: $paletaColoresTitulo;
+                        }
+                        .card-text {
+                            line-height: 2;
+                            font-size: $fontSizeP;
+                            color: $paletaColoresParrafos;
+                        }
+                        .boton-card {
+                            display: flex;
+                            justify-content: center;
+                            a {
+                                padding: 10px;
+                                margin-top: 10px;
+                                color: black;
+                                border: 1px solid #2B556C;
+                                border-radius: 4px;
+                                transition: all 400ms ease;
+                                &:hover {
+                                    @include fondo;
+                                }
+                            }
+                            .btn {
+                                width: 50%;
+                                background-color: $paletaColoresTitulo;
+                                display: block;
+                                font-weight: $fontWeight;
+                                padding: 10px;
+                                text-align: center;
+                                margin-top: 10px;
+                                border-radius: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

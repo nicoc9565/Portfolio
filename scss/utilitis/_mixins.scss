@@ -1,0 +1,25 @@
+@mixin title-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 0;
+}
+
+@mixin fondo {
+    background: rgb(2,0,36);
+    background: $gradiente;
+    box-shadow: $shadowBox;
+    border-radius: 20px;
+}
+
+@mixin subTitle {
+    margin-top: 100px;
+    font-size: $fontSizeH2;
+    font-weight: 900;
+    background: #CC7D51;
+    background: linear-gradient(to bottom, #CC7D51 30%, #111E2D 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,14 +1,14 @@
-@import "_mixins";
-@import "_keyframes";
-@import "_variables";
-@import "_maps";
-@import "_generales";
+@import "./utilitis/mixins";
+@import "./otros/keyframes";
+@import "./utilitis/variables";
+@import "./utilitis/maps";
+@import "./otros/generales";
 
-@import "_header";
-@import "_index";
-@import "_blog";
-@import "_galeria";
-@import "_info";
-@import "_contacto";
-@import "_footer";
-@import "_mediaquerie";
+@import "./page/header";
+@import "./page/index";
+@import "./page/info";
+@import "./page/blog";
+@import "./page/galeria";
+@import "./page/contacto";
+@import "./page/footer";
+@import "./otros/mediaquerie";
