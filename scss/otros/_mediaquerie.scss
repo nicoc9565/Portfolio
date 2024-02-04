@@ -94,15 +94,16 @@
         }
     }
 
-    .carrusel {
-        .gallery-wrap {
-            flex-direction: column;
-            .item {
-                margin: 5px 0 5px 0;
+    .carrusel-gallery {
+        .carrusel {
+            .gallery-wrap {
+                flex-direction: column;
+                .item {
+                    margin: 5px 0 5px 0;
+                }
             }
         }
     }
-
     .hero {
         .social_icons {
             gap: 20px;

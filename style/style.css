@@ -777,10 +777,10 @@ footer .copy-footer {
     font-size: 13px;
     padding: 3px;
   }
-  .carrusel .gallery-wrap {
+  .carrusel-gallery .carrusel .gallery-wrap {
     flex-direction: column;
   }
-  .carrusel .gallery-wrap .item {
+  .carrusel-gallery .carrusel .gallery-wrap .item {
     margin: 5px 0 5px 0;
   }
   .hero .social_icons {
